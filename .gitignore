@@ -20,6 +20,12 @@
 *.bin
 *.patch
 *.cfgtmp
+#
+# setra stuff
+*.image
+*.cmd
+*.srec
+*.map
 
 # host programs on Cygwin
 *.exe
