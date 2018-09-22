@@ -23,6 +23,20 @@ config LOCALVERSION
 	  object and source tree, in that order.  Your total string can
 	  be a maximum of 64 characters.
 
+config BOOT_RETRY_TIME
+         int "Delay to automatically retry reboot after no valid command"
+         default 10
+         help
+           Command timeout before automatically resetting.
+           set to -1 to disable boot retry feature
+
+ config RESET_TO_RETRY
+         bool "Reset after command timeout"
+         default y
+         help
+           This will automatically reset the CPU if not valid command is
+           entered after a timeout.
+
 config LOCALVERSION_AUTO
 	bool "Automatically append version information to the version string"
 	default y
